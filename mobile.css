@@ -1,0 +1,804 @@
+
+
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    width: 100%;
+    background-color:white;
+}
+
+.navbar {
+    width: 100%;
+    height: 64px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 5px;
+    & img{
+        height: 50px;
+    }
+}
+
+
+.logo-text {
+    color: white;
+    font-size: 25px;
+    font-weight: 900;
+    font-style: italic;
+}
+
+.logo-text span {
+    color: #ffb000;
+}
+
+.logo-text b {
+    color: red;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    position:sticky;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    transition: 0.3s;
+    display: block;
+    padding: 15px 10px;
+    border-bottom: 1px solid #ddd;
+    white-space: nowrap;
+   
+}
+
+.nav-links a:hover {
+    color: #ffb000;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    color: white;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+.nav-links{
+    list-style: none;
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+}
+
+
+
+
+
+
+.mobile-fitting {
+    width: 100%;
+    position: relative;
+    background: white;
+    min-height: 700px;
+}
+
+
+.fitting-header {
+    width: 100%;
+    height: 346px;
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 130px;
+}
+
+.fitting-header h1 {
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+}
+
+
+.fitting-content {
+    width: 100%;
+    position: relative;
+    margin-top: -80px;
+    padding: 0 13.1%;
+    
+}
+
+
+.fitting-image {
+    width: 100%;
+    border: 15px solid white;
+    overflow: hidden;
+    position: relative;
+    background: black;
+   
+}
+
+.fitting-image img {
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
+     
+} 
+
+
+
+
+
+.mobile-fitting1 {
+    width: 100%;
+    background: #fff;
+    padding: 45px 4%;
+}
+
+.fitting-content1 {
+    max-width: 1400px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: start;
+}
+
+.fitting-title1 h1 {
+    font-size: 36px;
+    line-height: 1.4;
+    font-weight: 500;
+    color: #222;
+    margin: 0;
+}
+
+.fitting-description1 p {
+    font-size: 18px;
+    line-height: 1.95;
+    color: #888;
+    margin: 0;
+}
+
+
+
+
+.footer1 {
+    width: 100%;
+    min-height: 530px;
+    background: #000;
+    color: #888;
+    padding: 85px 4% 30px;
+    position: relative;
+}
+
+.footer-container1 {
+    max-width: 1650px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1.5fr 0.9fr 0.9fr 0.95fr 1.5fr;
+    gap: 55px;
+}
+
+
+
+.footer-logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+    color: white;
+    font-size: 21px;
+    font-weight: 800;
+    font-style: italic;
+    margin-bottom: 22px;
+}
+
+.tyre-icon {
+    font-size: 35px;
+    color: white;
+}
+
+.logo-orange {
+    color: #ffae00;
+}
+
+
+
+
+.footer-brand p {
+    max-width: 310px;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #888;
+    margin: 0;
+}
+
+
+
+.footer-column h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #aaa;
+    margin: 7px 0 27px;
+}
+
+
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column ul li {
+    font-size: 18px;
+    line-height: 1.95;
+    margin-bottom: 3px;
+    color: #888;
+}
+
+.footer-column ul li a {
+    color: #888;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+    color: #ffae00;
+}
+
+
+
+.instagram-icon {
+    display: inline-flex;
+    color: #aaa;
+    margin-top: 24px;
+    transition: 0.3s;
+}
+
+.instagram-icon:hover {
+    color: #ffae00;
+}
+
+.footer-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 115px;
+    gap: 22px;
+}
+
+.payment-methods {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: white;
+}
+
+.visa {
+    font-size: 35px;
+    font-weight: 900;
+    font-style: italic;
+}
+
+.mastercard {
+    width: 60px;
+    height: 35px;
+    border-radius: 25px;
+    background: white;
+    color: #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 9px;
+    font-weight: bold;
+    letter-spacing: -1px;
+}
+
+.footer-bottom p {
+    font-size: 17px;
+    color: #888;
+    margin: 0;
+    text-align: center;
+}
+
+
+
+
+
+
+
+/* =====================================
+   LARGE LAPTOP RESPONSIVENESS
+===================================== */
+
+@media screen and (max-width: 1200px) {
+
+    /* NAVBAR */
+
+    .navbar {
+        padding: 0 3%;
+    }
+
+    .nav-links {
+        gap: 25px;
+    }
+
+    .nav-links a {
+        font-size: 17px;
+    }
+
+
+    /* MOBILE FITTING IMAGE */
+
+    .fitting-content {
+        padding: 0 8%;
+    }
+
+    .fitting-image img {
+        height: 480px;
+    }
+
+
+    /* FITTING DESCRIPTION */
+
+    .fitting-content1 {
+        gap: 40px;
+    }
+
+    .fitting-title1 h1 {
+        font-size: 31px;
+    }
+
+    .fitting-description1 p {
+        font-size: 16px;
+    }
+
+
+    /* FOOTER */
+
+    .footer-container1 {
+        grid-template-columns: 1.3fr 1fr 1fr;
+        gap: 40px;
+    }
+
+    .footer-brand p {
+        font-size: 16px;
+    }
+
+    .footer-column ul li {
+        font-size: 16px;
+    }
+}
+
+
+/* =====================================
+   TABLET RESPONSIVENESS
+===================================== */
+
+@media screen and (max-width: 768px) {
+
+    /* NAVBAR */
+
+    .navbar {
+        height: 65px;
+        padding: 0 5%;
+    }
+
+    .logo img {
+        height: 43px;
+    }
+
+    .logo-text {
+        font-size: 22px;
+    }
+
+    .menu-toggle {
+        display: block;
+        z-index: 10001;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 64px;
+        left: 0;
+        width: 100%;
+        background: #000;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        padding: 10px 5%;
+        border-bottom: none;
+        z-index: 10000;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links a {
+        width: 100%;
+        padding: 15px 5px;
+        font-size: 17px;
+        border-bottom: 1px solid #333;
+    }
+
+
+    /* MOBILE FITTING SECTION */
+
+    .mobile-fitting {
+        min-height: auto;
+        padding-bottom: 50px;
+    }
+
+    .fitting-header {
+        height: 280px;
+        padding: 110px 5% 0;
+    }
+
+    .fitting-header h1 {
+        font-size: 32px;
+    }
+
+    .fitting-content {
+        margin-top: -65px;
+        padding: 0 5%;
+    }
+
+    .fitting-image {
+        border: 10px solid white;
+    }
+
+    .fitting-image img {
+        height: 400px;
+        object-fit: cover;
+    }
+
+
+    /* FITTING DESCRIPTION */
+
+    .mobile-fitting1 {
+        padding: 40px 6%;
+    }
+
+    .fitting-content1 {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .fitting-title1 h1 {
+        font-size: 29px;
+    }
+
+    .fitting-description1 p {
+        font-size: 16px;
+        line-height: 1.8;
+    }
+
+
+    /* FOOTER */
+
+    .footer1 {
+        padding: 60px 6% 30px;
+    }
+
+    .footer-container1 {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px 30px;
+    }
+
+    .footer-brand {
+        grid-column: span 2;
+    }
+
+    .footer-brand p {
+        max-width: 400px;
+    }
+
+    .footer-column h3 {
+        font-size: 15px;
+        margin-bottom: 18px;
+    }
+
+    .footer-column ul li {
+        font-size: 15px;
+    }
+
+    .footer-bottom {
+        margin-top: 65px;
+    }
+
+}
+
+
+/* =====================================
+   MOBILE PHONE RESPONSIVENESS
+===================================== */
+
+@media screen and (max-width: 480px) {
+
+    /* NAVBAR */
+
+    .navbar {
+        height: 60px;
+        padding: 0 4%;
+    }
+
+    .logo img {
+        height: 38px;
+    }
+
+    .logo-text {
+        font-size: 19px;
+    }
+
+    .menu-toggle {
+        font-size: 25px;
+    }
+
+    .nav-links {
+        top: 60px;
+    }
+
+
+    /* MOBILE FITTING */
+
+    .fitting-header {
+        height: 230px;
+        padding: 95px 5% 0;
+    }
+
+    .fitting-header h1 {
+        font-size: 25px;
+        line-height: 1.4;
+    }
+
+    .fitting-content {
+        margin-top: -45px;
+        padding: 0 4%;
+    }
+
+    .fitting-image {
+        border: 7px solid white;
+    }
+
+    .fitting-image img {
+        height: 280px;
+        object-position: center;
+    }
+
+    .mobile-fitting {
+        padding-bottom: 35px;
+    }
+
+
+    /* FITTING DESCRIPTION */
+
+    .mobile-fitting1 {
+        padding: 35px 5%;
+    }
+
+    .fitting-content1 {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .fitting-title1 h1 {
+        font-size: 24px;
+        line-height: 1.4;
+    }
+
+    .fitting-description1 p {
+        font-size: 15px;
+        line-height: 1.8;
+    }
+
+
+    /* FOOTER */
+
+    .footer1 {
+        padding: 50px 6% 25px;
+    }
+
+    .footer-container1 {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .footer-brand {
+        grid-column: auto;
+    }
+
+    .footer-brand p {
+        max-width: 100%;
+        font-size: 15px;
+        line-height: 1.8;
+    }
+
+    .footer-logo {
+        font-size: 19px;
+        margin-bottom: 15px;
+    }
+
+    .tyre-icon {
+        font-size: 30px;
+    }
+
+    .footer-column h3 {
+        font-size: 14px;
+        margin: 0 0 13px;
+    }
+
+    .footer-column ul li {
+        font-size: 14px;
+        line-height: 1.9;
+    }
+
+    .instagram-icon {
+        margin-top: 15px;
+    }
+
+    .footer-bottom {
+        margin-top: 45px;
+        gap: 18px;
+    }
+
+    .visa {
+        font-size: 29px;
+    }
+
+    .mastercard {
+        width: 55px;
+        height: 32px;
+    }
+
+    .footer-bottom p {
+        font-size: 13px;
+    }
+
+}
+
+
+/* =====================================
+   EXTRA SMALL MOBILE PHONES
+===================================== */
+
+@media screen and (max-width: 350px) {
+
+    .logo img {
+        height: 33px;
+    }
+
+    .logo-text {
+        font-size: 17px;
+    }
+
+    .fitting-header h1 {
+        font-size: 22px;
+    }
+
+    .fitting-image img {
+        height: 230px;
+    }
+
+    .fitting-title1 h1 {
+        font-size: 21px;
+    }
+
+    .fitting-description1 p {
+        font-size: 14px;
+    }
+
+    .footer-column ul li {
+        font-size: 13px;
+    }
+
+    .footer-bottom p {
+        font-size: 12px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
